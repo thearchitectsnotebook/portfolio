@@ -1,40 +1,15 @@
-.intro {
-  display: flex;
-  color: rgba($white, .7);
 
-  h2 {
-    color: $white;
+.home-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.25)), url(../img/mojave.jpg);
+  padding: 10em 0;
+  color: #FFF;
+  background-size: cover;
+  background-position: center;
+}
 
-    &::after {
-      content: '';
-      width: 20%;
-      height: 1px;
-      background: rgba($white, .5);
-      display: block;
-      margin: 1em auto 0;
-    }
+@media (min-width: 60rem) {
+  .home-hero {
+    height: 100vh;
+    padding-top: 35vh;
   }
-
-@supports (display: grid) {
-  display: grid;
-  grid-template-columns: minmax(5em, 1fr) minmax(auto, 30em) minmax(5em, 1fr);
-}
-
-}
-
-.intro-middle {
-  background: $dark-blue;
-  padding: 2.5em 2vw;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.intro-left img,
-.intro-right img {
-  object-fit: cover;
-  min-height: 100%;
-  min-width: 100%;
-  display: block;
 }

@@ -1,182 +1,89 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intiial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Portfolio</title>
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=stonewash|3d-float|3d|destruction|scuffed-steel|canvas-print|shadow-multiple">
   </head>
+
   <body>
-
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="container-all">
-
-    <div class="welcome">
-      <button class="menu-button">
-        <svg class="hamburger" x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
-          <g transform="translate(-15 -15)">
-            <rect x="15" y="16" class="st0" width="30" height="2">
-          </g>
-          <g transform="translate(-15 -9)">
-            <rect x="15" y="16" class="st0" width="30" height="2">
-          </g>
-          <g transform="translate(-15 -3)">
-            <rect x="15" y="16" class="st0" width="30" height="2">
-          </g>
-        </svg>
-
-        <svg class="close-icon" x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
-        <g transform="translate(-15 -15)">
-        	<polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3
-        		35.8,16.5 37,17.7 	"/>
-        </g>
-        </svg>
-
-      </button>
-      <h1>Welcome to my<span>Portfolio</span></h1>
+    <header>
+      <img src="img/trans-logo.png" class="logo" alt="Personal Portfolio Logo">
+      <nav>
+        <ul>
+          <li><a href="#about-textbox">About</a></li>
+          <li><a href="#notebook">Notebook</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section id="home" class="home-hero">
+      <div class="container">
+        <h1 class="name">The Architect's Notebook</h1>
+        <h2 class="occupation"><em>official deep thinker of useless things</em></h2>
+        <a href="#notebook" class="button button-accent">See My Work</a>
+      </div>
+    </section>
+    
+    <div class="container">
+      <section id="about" class="home-about">
+        <div class="home-about-textbox" id="about-textbox">
+          <h1>About</h1>
+          <p>What I actually meant by <a class="text-link" target="_blank" href="https://www.16personalities.com/intj-personality">architect</a> 
+            when buying the domain. I'm an idiot. Interested in humanity, technology, space, and the art of rationality. Here, we examine the small things that make life worth living.</p>
+        </div>
+      </section>
     </div>
 
-    <section class="intro">
-      <div class="intro-left">
-        <img src="img/laptop.jpg" alt="a laptop on a desk">
-      </div>
-      <div class="intro-middle">
-        <h2>Building Synergy</h2>
-        <p>Creating separate worlds and universes where art and technology meet to form the perfect environment.</p>
-      </div>
-      <div class="intro-right">
-        <img src="img/laptop2.jpeg" alt="city landscape">
-      </div>
-    </section>
+    <section class="notebook">
+      <h1 class="notebook name" id="notebook">The Notebook</h1>
 
-    <section id="about" class="about-me">
-      <img class="about-img" src="img/hands.jpeg" alt="a pair of hands">
-      <h1 class="about-title">Evelyn Chin</h1>
-      <h2 class="about-subtitle">Web Designer</h2>
-      <div class="about-text">
-        <p>I am a designer dedicated to bridging the gap between art and technology, interlacing both to create a perfect and balanced singularity.</p>
-        <p>The progress of technology has created a new medium of design, in which the highest quality of aesthetic can be interwoven with the highest quality of technology. Modern minimalistic artistry combined with sharp intellectual prowess can create an outcome that has never been closer to the holy grail of perfection.</p>
-      </div>
-    </section>
+      <div class="notes">
 
-    <section id="portfolio" class="portfolio">
-        <h1>My Work</h1>
+        <!-- The Ironic Inhumanity of Emotion -->
 
-        <div class="portfolio-items">
-
-          <!-- Portfolio item 0 -->
-
-          <figure class="portfolio-item featured">
-            <img src="img/emerge.PNG" alt="portfolio item">
-            <figcaption>
-              <h2 class="portfolio-title">Emerge</h2>
-              <p class="portfolio-desc">One of my latest and favorite projects with a company I truly admire: Emerge, with the mission of redefining teleportation in the new technological age.</p>
-              <a target="_blank" href="https://echin179.github.io/emerge/" class="portfolio-link">Website</a>
-            </figcaption>
-          </figure>
-
-          <!-- Portfolio item 1 -->
-
-          <figure class="portfolio-item">
-            <img src="img/tomorrowlandofficial.PNG" alt="portfolio item">
-            <figcaption>
-              <h2 class="portfolio-title">Tomorrowland Official</h2>
-              <p class="portfolio-desc">Join us for our journey to tomorrow.</p>
-              <a target="_blank" href="https://echin179.github.io/tomorrowlandofficial/" class="portfolio-link">Website</a>
-            </figcaption>
-          </figure>
-
-          <!-- Portfolio item 2 -->
-
-          <figure class="portfolio-item">
-            <img src="img/hall-of-heroes.PNG" alt="portfolio item">
-            <figcaption>
-              <h2 class="portfolio-title">Hall of Heroes</h2>
-              <p class="portfolio-desc">Meet our world's superheroes.</p>
-              <a target="_blank" href="https://echin179.github.io/hallofheroes/" class="portfolio-link">Website</a>
-            </figcaption>
-          </figure>
-
-          <!-- Portfolio item 3 -->
-
-          <figure class="portfolio-item">
-            <img src="img/americana.PNG" alt="portfolio item">
-            <figcaption>
-              <h2 class="portfolio-title">Americana Senior Care</h2>
-              <p class="portfolio-desc">First big project: designing a website for Americana Senior Care.</p>
-              <a target="_blank" href="https://echin179.github.io/americana/" class="portfolio-link">Website</a>
-            </figcaption>
-          </figure>
-
-          <!-- Portfolio item 4 -->
-
-          <figure class="portfolio-item">
-            <img src="img/tomorrowland.PNG" alt="portfolio item">
-            <figcaption>
-              <h2 class="portfolio-title">Tomorrowland (First Draft)</h2>
-              <p class="portfolio-desc">[Take 1] Join us for our journey to tomorrow.</p>
-              <a target="_blank" href="https://echin179.github.io/tomorrowland/" class="portfolio-link">Website</a>
-            </figcaption>
-          </figure>
-
-          <!-- Portfolio item 5 -->
-
-          <figure class="portfolio-item">
-            <img src="img/first-portfolio.PNG" alt="portfolio item">
-            <figcaption>
-              <h2 class="portfolio-title">First Portfolio</h2>
-              <p class="portfolio-desc">Blast to the past with my very first portfolio. :)</p>
-              <a target="_blank" href="https://codepen.io/evelynchin/full/gOYMNRR" class="portfolio-link">Website</a>
-            </figcaption>
-          </figure>
-
+        <div class="note">
+          <img src="img/ironic-inhumanity-of-emotion.jpg" alt="" class="note-img">
+          <div class="desc">
+            <h2 class="note-title">The Ironic Inhumanity of Emotion</h2>
+            <p>Reacting properly to blinding rage and deafening grief.</p>
+            <a href="" target="_blank" class="button button-accent button-small">Read More</a>
+          </div>
         </div>
-    </section>
 
-    <section id="contact" class="contact">
-      <h1>Contact Me</h1>
-      <form action="">
-
-        <label class="name">Name:
-          <input type="text" id="name">
-        </label>
-
-        <label class="email">Email:
-          <input type="email" id="email">
-        </label>
-
-        <label class="message">Message:
-          <textarea name="" id="message"></textarea>
-        </label>
-
-        <input class="button" type="submit" value="SEND">
-
-      </form>
-    </section>
-
-    <footer>
-      <p>Follow me on social media</p>
-      <div class="social-icons">
-        <img src="img/twitter.svg" alt="" class="social-icon">
-        <img src="img/instagram.svg" alt="" class="social-icon">
-        <img src="img/github.svg" alt="" class="social-icon">
       </div>
+    </section>
 
-      <p class="copyright">Copyright 2019 Evelyn Chin</p>
+    <section class="portfolio">
+      <h1 class="my-projects name" id="portfolio">The Portfolio</h1>
+      
+      <div class="port-items">
+      
+        <!-- The Architect's Notebook -->
+
+        <figure class="port-item">
+          <img src="img/mojave.jpg" alt="Disney Favorites Survey">
+          <figcaption class="desc">
+            <h2>The Architect's Notebook</h2>
+            <p>Where my best and worst ideas collide.</p>
+            <a href="thearchitectsnotebook.com" target="_blank" class="button button-accent button-small">See Project</a>
+          </figcaption>
+        </figure>
+        
+      </div>  
+    </section>
+    
+    <footer>
+      <p>the architect's notebook 2020 <br>website design credit to kevin powell</p>      
     </footer>
-
-  </div>
-
-    <script src="js/nav.js"></script>
-
+    
   </body>
+
 </html>

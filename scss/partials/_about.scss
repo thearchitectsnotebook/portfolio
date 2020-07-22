@@ -1,0 +1,59 @@
+.home-about-textbox {
+  background-color: $main;
+  padding: 4em;
+  left: 0;
+  right: 0;
+  margin: 0 -2.45vw;
+  outline: 2px solid $highlight;
+  outline-offset: -2.5em;
+  color: #FFF;
+  position: relative;
+}
+
+.home-about-textbox h1 {
+  color: $highlight;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: .45em;
+  background: $main;
+  padding: 0 .3em;
+}
+
+@media (min-width: 0em) {
+  .home-about-textbox h1 {
+    top: 0em;
+    padding: 0 .35em;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .home-about-textbox h1 {
+    top: -.1em;
+    padding: 0 .5em;
+    font-size: 2.3rem;
+    left: 2em;
+    transform: translateX(0);
+  }
+  
+  .home-about {
+    background-image: url(http://hdqwalls.com/download/astrology-astronomy-constellation-5k-nr-2560x1700.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 70%;
+    height: 50vh;
+    left: 0;
+    right: 0;
+    margin: 0 -2.46vw;
+  }
+  
+  .home-about-textbox {
+    width: 45%;
+    margin-left: 5%;
+    top: -4.5em;
+    text-align: left;
+    box-shadow: 0 0 4em 0 rgba(0, 0, 0, 0.4);
+    padding: 4.5em;
+  }
+}

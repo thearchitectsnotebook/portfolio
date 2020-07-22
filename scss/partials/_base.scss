@@ -1,39 +1,29 @@
-body {
-  color: $gray;
-  font-family: $ff-s;
-  line-height: 1.6;
-  background: $white;
-  font-size: .875rem;
-  overflow-x: hidden;
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 250ms;
+  scroll-behavior: smooth;
+}
 
-  @include mq {
-    font-size: 1.125rem;
-  }
+body {
+  margin: 0;
+  font-family: raleway, sans-serif;
+  text-align: center;
 }
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
-h1, h2, p {
-  margin-top: 0;
-  margin-bottom: 1em;
+.container {
+  width: 95%;
+  margin: 0 auto;
 }
 
-h1 {
-  color: $accent;
-  line-height: 1;
-  font-size: 3.125rem;
-
-  @include mq {
-    font-size: 4.25rem;
-  }
-}
-
-h2 {
-  @include sans-serif($fs: 2rem);
-
-  @include mq {
-    font-size: 3rem;
-  }
+.clearfix::after,
+section::after,
+footer::after {
+  content: '';
+  display: block;
+  clear: both;
 }

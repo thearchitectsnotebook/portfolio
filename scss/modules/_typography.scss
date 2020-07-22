@@ -1,17 +1,86 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap');
 
-$ff-s: 'Merriweather', serif;
-$ff-ss: 'Six Caps', sans-serif;
+$ff-s: 'Raleway', sans-serif;
+$ff-ss: 'Raleway', sans-serif;
 
 $fw-n: 400;
+$fw-m: 700;
 $fw-b: 900;
 
+
 @mixin sans-serif($fs, $ls: .15em, $color: $dark-gray, $tt: uppercase, $lh: 1) {
-font-size: $fs;
+  font-size: $fs;
   letter-spacing: $ls;
   color: $color;
   text-transform: $tt;
   line-height: $lh;
   font-family: $ff-ss;
   font-weight: $fw-n;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 0;
+  line-height: 1.45em;
+}
+
+.text-link {
+  color: #00ff6c;
+  text-decoration: none;
+  font-weight: $fw-m;
+}
+
+.name {
+  font-size: 3.5em;
+  margin-bottom: 0;
+  font-weight: 900;
+  margin: 1em .1em 0;
+}
+
+.occupation {
+  font-weight: 300;
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 1.5em;
+}
+
+.name-cta {
+  margin-top: 0em;
+}
+
+.occupation-cta {
+  margin-top: 0.5em;
+}
+
+@media (min-width: 60rem) {
+  .name {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 60rem) {
+  #home .container {
+    margin-left: .5em;
+    margin-right: .5em;
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .occupation {
+    font-size: 1.3rem;
+  }
+
+  h2, .note-title {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: .8rem;
+  }
 }

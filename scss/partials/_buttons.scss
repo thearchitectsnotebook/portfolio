@@ -1,0 +1,42 @@
+.button {
+    display: inline-block;
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5em 1.75em;
+  }
+  
+  @media (min-width: 60rem) {
+    .button {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .button-small {
+    font-size: .8rem;
+    font-weight: 400;
+  }
+  
+  .button-accent {
+    color: $highlight;
+    border-color: $highlight;
+  }
+  
+  .button-accent:hover,
+  .button-accent:focus {
+    background: $highlight;
+    color: $main;
+  }
+  
+  .button-dark {
+    color: $main;
+    border-color: $main;
+  }
+  
+  .button-dark:hover,
+  .button-accent:focus {
+    background: $main;
+    color: $highlight;
+  }

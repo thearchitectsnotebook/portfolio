@@ -1,81 +1,44 @@
-.menu-button {
+header {
   position: absolute;
-  top: 3em;
-  left: 3em;
-  background: transparent;
-  border: 0;
+  left: 0;
+  right: 0;
+  margin: 1em;
 }
 
-nav {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 20%;
-  z-index: 10;
-
-  transform: translateX(-100%);
-  transition: transform ease-out 250ms;
+.logo {
+  height: 4em;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: space-around;
-  align-items: stretch;
-  background: $accent;
 }
 
 nav li {
-  text-align: center;
-
-  &:not(:last-of-type) {
-    border-bottom: 1px solid $dark-blue;
-  }
-}
-
-nav li:hover {
-  background: rgba($dark-blue, .5);
+  display: inline-block;
+  margin: 1em;
 }
 
 nav a {
-  display: inline-block;
-  @include sans-serif($fs: 4rem, $color: $dark-blue)
+  font-weight: 900;
   text-decoration: none;
-  padding: calc(100vh/8) 0;
-  line-height: 0;
-  width: 100%;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 0.5em;
+  color: #fff;
 }
 
-.close-icon {
-  display: none;
+nav a:hover,
+nav a:focus {
+  color: #DDD;
 }
 
-.nav-is-open {
-  height: 100vh;
-  overflow-y: hidden;
-
+@media (min-width: 60rem) {
+  .logo {
+    float: left;
+  }
   nav {
-    transform: translateX(0);
-  }
-
-  .container-all {
-    transform: translateX(80%);
-  }
-
-  .close-icon {
-    display: block;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .menu-button {
-    transform: translateX(-70%);
+    float: right;
   }
 }

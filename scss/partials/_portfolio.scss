@@ -16,6 +16,11 @@
   display: block;
 }
 
+.desc {
+  padding: 15%;
+  text-align: center;
+}
+
 @media (min-width: 37rem) {
   .port-item, .note {
     width: 50%;

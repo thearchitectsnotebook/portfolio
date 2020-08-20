@@ -494,6 +494,11 @@ footer::after {
   display: block;
 }
 
+.desc {
+  padding: 15%;
+  text-align: center;
+}
+
 @media (min-width: 37rem) {
   .port-item, .note {
     width: 50%;
@@ -692,4 +697,72 @@ nav a:focus {
 .button-accent:focus {
   background: #232323;
   color: #00ff6c;
+}
+
+#the-archive--hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../../img/the-archive/hero.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../img/the-archive/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../img/the-archive/hero.jpg);
+}
+
+#the-archive--overview {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../img/the-archive/overview.jpg);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../img/the-archive/overview.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../img/the-archive/overview.jpg);
+  background-size: cover;
+  height: 30em;
+  left: 0;
+  right: 0;
+}
+
+.halls .name {
+  margin-bottom: 1em;
+}
+
+.hall {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "text text" "img1 img2";
+  gap: 2em 2em;
+}
+.hall .text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: text;
+}
+.hall .painting1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: img1;
+}
+.hall .painting2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: img2;
+}
+
+.hall {
+  text-align: left;
+  background: #232323;
+  outline: 2px solid #00ff6c;
+  outline-offset: -3.5em;
+  padding: 6em;
+}
+.hall .text {
+  color: #FFFFFF;
+}
+.hall .text .time {
+  margin: 0 0 0.5em;
+}
+.hall .text .music {
+  margin-top: 0.5em;
+}
+.hall .port-item {
+  width: 100%;
+}
+
+.video iframe {
+  width: 100%;
+  height: 85vh;
 }

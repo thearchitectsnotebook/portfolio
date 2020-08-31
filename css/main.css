@@ -815,3 +815,38 @@ nav a:focus {
             transform: translateY(0%);
   }
 }
+#junocity--hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../img/junocity/hero.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/junocity/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/junocity/hero.jpg);
+}
+
+.pages h1 {
+  margin-bottom: 1em;
+}
+
+.page-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1em 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  padding: 2em;
+  background: #232323;
+}
+
+#junocity--cta .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#junocity--cta .btn-container a {
+  margin-bottom: 1em;
+}

@@ -478,11 +478,16 @@ footer::after {
 }
 .port-items {
   background: #232323;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .port-item {
   margin: 0;
   position: relative;
+  width: 100%;
 }
 
 .my-projects {
@@ -499,10 +504,15 @@ footer::after {
   text-align: center;
 }
 
-@media (min-width: 37rem) {
-  .port-item, .note {
-    width: 50%;
-    float: left;
+@media (max-width: 680px) {
+  .port-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media (min-width: 60rem) {
@@ -525,6 +535,13 @@ footer::after {
 #notebook {
   margin: 0;
   padding: 1em 0;
+}
+
+.notes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .note {
@@ -572,6 +589,17 @@ footer::after {
   text-decoration: none;
 }
 
+@media (max-width: 680px) {
+  .notes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 @media (min-width: 60rem) {
   .note {
     overflow: hidden;
@@ -849,4 +877,85 @@ nav a:focus {
 }
 #junocity--cta .btn-container a {
   margin-bottom: 1em;
+}
+
+#unity-animation--hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../img/unity-animation/hero.png);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/unity-animation/hero.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/unity-animation/hero.png);
+}
+
+#unity-animation--overview {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../img/unity-animation/overview.png);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/unity-animation/overview.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/unity-animation/overview.png);
+  background-position: 50% 0%;
+}
+
+#unity-animation--name {
+  margin-bottom: 1em;
+}
+
+.movies {
+  padding: 2em;
+  background: #232323;
+}
+.movies .movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5em;
+}
+.movies .movie iframe {
+  width: 40em;
+  height: 22.5em;
+}
+.movies .movie figcaption {
+  width: 25em;
+  text-align: left;
+  color: #FFFFFF;
+}
+.movies .movie figcaption h2 {
+  color: #00ff6c;
+}
+.movies .movie-left figcaption {
+  padding-left: 3em;
+}
+.movies .movie-right figcaption {
+  padding-right: 3em;
+}
+
+@media (max-width: 800px) {
+  .movies .movie {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .movies .movie figcaption {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    text-align: center;
+    padding: 1em 0;
+    width: 80%;
+    margin-bottom: 1em;
+    min-width: 18em;
+  }
+  .movies .movie iframe {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 85vw;
+  }
+
+  .movies .movie-left figcaption, .movies .movie-right figcaption {
+    padding: 0;
+  }
 }

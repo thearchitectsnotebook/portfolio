@@ -3,6 +3,11 @@
     padding: 1em 0;
 }
 
+.notes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .note {
     color: $white;
     position: relative;
@@ -40,6 +45,13 @@
     font-weight: $fw-m;
     text-decoration: none;
 }
+
+@media (max-width: 680px) {
+    .notes {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
 @media (min-width: 60rem) {
     .note {

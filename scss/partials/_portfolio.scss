@@ -1,10 +1,13 @@
 .port-items {
   background: $main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .port-item {
   margin: 0;
   position: relative;
+  width: 100%;
 }
 
 .my-projects {
@@ -21,12 +24,18 @@
   text-align: center;
 }
 
-@media (min-width: 37rem) {
-  .port-item, .note {
-    width: 50%;
-    float: left;
+@media (max-width: 680px) {
+  .port-items {
+    display: flex;
+    flex-direction: column;
   }
 }
+
+// @media (min-width: 37rem) {
+//   .port-item, .note {
+//     float: left;
+//   }
+// }
 
 @media (min-width: 60rem) {
   .port-item {

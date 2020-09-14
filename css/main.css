@@ -849,6 +849,10 @@ nav a:focus {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/junocity/hero.jpg);
 }
 
+#junocity--overview-textbox {
+  min-width: 43em;
+}
+
 .pages h1 {
   margin-bottom: 1em;
 }
@@ -879,6 +883,11 @@ nav a:focus {
   margin-bottom: 1em;
 }
 
+@media (max-width: 950px) {
+  #junocity--overview-textbox {
+    min-width: 0em;
+  }
+}
 #unity-animation--hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../img/unity-animation/hero.PNG);
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/unity-animation/hero.PNG);

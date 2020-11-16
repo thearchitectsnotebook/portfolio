@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intiial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Flux</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=stonewash|3d-float|3d|destruction|scuffed-steel|canvas-print|shadow-multiple">
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"><img src="img/trans-logo.png" class="logo" alt="Logo"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#flux--overview-textbox">Overview</a></li>
+          <li><a href="#flux--how-it-works">Mechanism</a></li>
+          <li><a href="#flux--usability">Usability</a></li>
+          <li><a href="#flux--demo">Demo</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section id="flux--hero" class="home-hero">
+      <div class="container">
+        <h1 class="name">Flux</h1>
+        <h2 class="occupation"><em>bringing balance to power.</em></h2>
+        <a href="#flux--overview-textbox" class="button button-accent">Explore Flux</a>
+      </div>
+    </section>
+    
+    <div class="container">
+      <section id="flux--overview" class="home-about">
+        <div class="home-about-textbox" id="flux--overview-textbox">
+          <h1>Overview</h1>
+          <p>In September 2020, I was selected as one of eight students across the United States to work in BitCamp Serverless. After working with Microsoft engineers to learn about serverless architecture design and development, I created Flux.</p>
+          <p><b>Problem: </b> Fluctuations in renewable energy risk access to power, and causes us to use dirtier electricity.</p>
+          <p><b>Solution:</b> Flux aims to reduce a user's carbon footprint and mitigate fluctuations in demand by periodically informing them of their regional power grid's demand through SMS text messaging.</p>
+        </div>
+      </section>
+    </div>
+
+    <section id="flux--how-it-works" class="">
+        <div class="container">
+            <ol>
+                <h1>How Flux Works</h1>
+                <li>Azure Static Web Apps hosts the remote website that takes in basic user data through an HTML5 form.</li>
+                <li>Azure Cosmos DataBases receives and stores the inputted data as a document.</li>
+                <li>The Azure Function periodically shoots a signal every hour to request power demand data from the U.S. Energy Information Administration API, and returns it to the Function.</li>
+                <li>The Function calculates the quartiles of the average demand over the past 24 hours, and determines if the most recent demand data is an anomaly.</li>
+                <li>If the demand from the previous hour is considered an outlier AND a change from the previous demand state, the Azure Function will send the message to the Twilio API.</li>
+                <li>Finally, Twilio accepts the array of messages for each user and sends them to each mobile number.</li>
+            </ol>
+            <img src="img/flux/how-it-works.svg" alt="">
+        </div>
+    </section>
+
+    <section id="flux--usability" class="">
+        <div class="container">
+            <div>
+                <h1>Balancing Usability</h1>
+                <p>The main obstacle was figuring out how often to text users of the power demand. The more texts sent, the more annoying it became. The less texts sent, the more useless Flux would be. To find the correct balance of frequency, I tested three outlier rules of basic statistics.</p>
+                <p><b>Rules and Frequencies</b></p>
+                <ol>
+                    <li>Z-Score (or Extreme Value Analysis): 0 texts/day</li>
+                    <li>1.5 Quartile Rule: 3 texts/day</li>
+                    <li>Outside Q1 and Q3 bounds: 8 texts/day</li>
+                </ol>
+                <p>Thus, the 1.5 Quartile Rule became the threshold preset for outlier identification of power demand.</p>
+            </div>            
+            <img src="img/flux/graph.svg" alt="">
+        </div>
+    </section>
+
+    <iframe id="flux--demo" src="https://www.youtube.com/embed/e782dEDRA38" frameborder="0" allow="accelerometer;" allowfullscreen id="flux--demo"></iframe>
+
+    <div class="cta" id="flux--cta">
+      <div class="btn-container">
+        <a href="http://flux.thearchitectsnotebook.com" target="_blank" class="button button-accent button-cta">Go to Flux</a>
+        <a href="https://github.com/thearchitectsnotebook/flux" target="_blank" class="button button-accent button-cta">Github</a>
+      </div>
+    </div>
+    
+    <footer>
+      <p>the architect's notebook 2020 <br>website design credit to kevin powell</p>      
+    </footer>
+    
+  </body>
+
+</html>

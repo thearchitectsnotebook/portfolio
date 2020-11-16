@@ -1,9 +1,32 @@
 .cta {
-    background-color: $highlight;
-    padding: 3em 0;
-  }
-  
-  .contact-links {
+  background-color: $highlight;
+  padding: 3em 0;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+#home--cta {
+  .btn-container {
     display: flex;
     justify-content: space-around;
   }
+}
+
+@media (max-width: 500px) {
+  #home--cta {
+
+    .btn-container {
+      flex-direction: column;
+      width: 15em;
+      max-width: 90vw;
+      margin: 0 auto;
+
+      a {
+        margin-bottom: .5em;
+      }
+    }
+  }
+}

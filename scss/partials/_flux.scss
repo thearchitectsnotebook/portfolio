@@ -1,0 +1,72 @@
+#flux--hero {
+    background-image: linear-gradient(rgba(black,0.4), rgba(black,0.7)), url(../../img/flux/hero.jpg);
+}
+
+#flux--how-it-works, #flux--usability {
+    background: $main;
+    color: $white;
+    padding: 2em;
+    margin: 0;
+    text-align: left;
+    line-height: 1.7;
+    font-size: 1rem;
+    
+    h1 {
+        color: $highlight;
+        margin-left: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    ol {
+        margin-right: 2em;
+    }
+}
+
+#flux--usability {
+    padding: 0 3.5em 6em;
+}
+
+#flux--usability div {
+    margin-right: 2em;
+}
+
+#flux--demo {
+    width: 100vw;
+    height: 80vh;
+}
+
+#flux--cta {
+    div {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width: 1000px) {
+    #flux--how-it-works, #flux--usability {
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            font-size: 0.8rem;
+            margin: 0 auto;
+        }
+    }
+
+    #flux--how-it-works, #flux--usability 
+    {
+        margin: 0 auto;
+
+        * {
+            margin: 0 auto;
+        }
+    }
+    
+    
+}

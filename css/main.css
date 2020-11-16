@@ -685,6 +685,28 @@ nav a:focus {
       justify-content: space-around;
 }
 
+#home--cta .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+  #home--cta .btn-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 15em;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  #home--cta .btn-container a {
+    margin-bottom: 0.5em;
+  }
+}
 .button {
   display: inline-block;
   font-size: 1.15rem;
@@ -886,6 +908,80 @@ nav a:focus {
 @media (max-width: 950px) {
   #junocity--overview-textbox {
     min-width: 0em;
+  }
+}
+#flux--hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url(../../img/flux/hero.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../../img/flux/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../../img/flux/hero.jpg);
+}
+
+#flux--how-it-works, #flux--usability {
+  background: #232323;
+  color: #FFFFFF;
+  padding: 2em;
+  margin: 0;
+  text-align: left;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+#flux--how-it-works h1, #flux--usability h1 {
+  color: #00ff6c;
+  margin-left: 0;
+}
+#flux--how-it-works .container, #flux--usability .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#flux--how-it-works ol, #flux--usability ol {
+  margin-right: 2em;
+}
+
+#flux--usability {
+  padding: 0 3.5em 6em;
+}
+
+#flux--usability div {
+  margin-right: 2em;
+}
+
+#flux--demo {
+  width: 100vw;
+  height: 80vh;
+}
+
+#flux--cta div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 1000px) {
+  #flux--how-it-works .container, #flux--usability .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 0.8rem;
+    margin: 0 auto;
+  }
+
+  #flux--how-it-works, #flux--usability {
+    margin: 0 auto;
+  }
+  #flux--how-it-works *, #flux--usability * {
+    margin: 0 auto;
   }
 }
 #unity-animation--hero {

@@ -4,11 +4,21 @@
 
 #empire--play {
     height: 120vh;
+
+    iframe {
+        height: 80%;
+    }
 }
 
 #empire--demo {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
+    margin-bottom: 4em;
+
+    iframe {
+        height: 75%;
+        width: 80%;
+    }
 }
 
 #empire--cta {
@@ -18,7 +28,28 @@
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 960px) {
+    #empire--play {
+        height: 120vh;
     
+        iframe {
+            height: 87%;
+        }
+    }
+    #empire--demo {
+        margin-bottom: 2em;
     
+        iframe {
+            width: 100%;
+        }
+    }
+    #empire--cta {
+        div {
+            flex-direction: column;
+
+            .button {
+                margin: 0.5em auto;
+            }
+        }
+    }
 }

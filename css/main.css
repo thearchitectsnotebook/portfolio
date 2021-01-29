@@ -993,10 +993,18 @@ nav a:focus {
 #empire--play {
   height: 120vh;
 }
+#empire--play iframe {
+  height: 80%;
+}
 
 #empire--demo {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
+  margin-bottom: 4em;
+}
+#empire--demo iframe {
+  height: 75%;
+  width: 80%;
 }
 
 #empire--cta div {
@@ -1007,6 +1015,31 @@ nav a:focus {
       justify-content: space-around;
 }
 
+@media (max-width: 960px) {
+  #empire--play {
+    height: 120vh;
+  }
+  #empire--play iframe {
+    height: 87%;
+  }
+
+  #empire--demo {
+    margin-bottom: 2em;
+  }
+  #empire--demo iframe {
+    width: 100%;
+  }
+
+  #empire--cta div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #empire--cta div .button {
+    margin: 0.5em auto;
+  }
+}
 #unity-animation--hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../img/unity-animation/hero.PNG);
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/unity-animation/hero.PNG);

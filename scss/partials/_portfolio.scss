@@ -20,8 +20,29 @@
 }
 
 .desc {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
   padding: 15%;
   text-align: center;
+
+
+  h2 {
+      margin: 0 .5em .5em;
+  }
+
+  p {
+      margin: 0 .5em 1em;
+  }
 }
 
 @media (max-width: 680px) {
@@ -49,4 +70,9 @@
   .port-item:hover .desc {
     transform: translateY(0%);
   }
+}
+
+.section-title {
+  margin: 0;
+  padding: 1em 0;
 }

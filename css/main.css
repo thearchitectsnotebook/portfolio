@@ -617,7 +617,6 @@ nav a:focus {
 .cta {
   background-color: #00ff6c;
   padding: 3em 0;
-  margin-top: 0.3em;
 }
 
 .contact-links {
@@ -1061,5 +1060,61 @@ nav a:focus {
 
   .movies .movie-left figcaption, .movies .movie-right figcaption {
     padding: 0;
+  }
+}
+#novus--hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../img/novus-memoriae/novus_memoriae.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/novus-memoriae/novus_memoriae.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/novus-memoriae/novus_memoriae.jpg);
+}
+
+#novus--demo {
+  height: 120vh;
+  width: 100vw;
+}
+#novus--demo h1.name.my-projects {
+  background-color: #232323;
+  margin: 0 auto;
+  color: #FFFFFF;
+}
+#novus--demo iframe {
+  height: 80%;
+}
+
+#novus--design #design {
+  padding: 1em;
+}
+
+#novus--cta div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 960px) {
+  #novus--demo {
+    height: 120vh;
+  }
+  #novus--demo iframe {
+    height: 87%;
+  }
+
+  #novus--design {
+    margin-bottom: 2em;
+  }
+  #novus--design iframe {
+    width: 100%;
+  }
+
+  #novus--cta div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #novus--cta div .button {
+    margin: 0.5em auto;
   }
 }

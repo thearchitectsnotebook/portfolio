@@ -1,0 +1,59 @@
+#novus--hero {
+    background-image: linear-gradient(rgba(black,0.6), rgba(black,0.6)), url(../../img/novus-memoriae/novus_memoriae.jpg);
+}
+
+#novus--demo {
+    height: 120vh;
+    width: 100vw;
+
+    h1.name.my-projects {
+        background-color: $main;
+        margin: 0 auto;
+        color: $white;
+    }
+
+    iframe {
+        height: 80%;
+    }
+}
+
+#novus--design {
+
+    #design
+    {
+        padding: 1em;
+    }
+}
+
+#novus--cta {
+    div {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width: 960px) {
+    #novus--demo {
+        height: 120vh;
+    
+        iframe {
+            height: 87%;
+        }
+    }
+    #novus--design {
+        margin-bottom: 2em;
+    
+        iframe {
+            width: 100%;
+        }
+    }
+    #novus--cta {
+        div {
+            flex-direction: column;
+
+            .button {
+                margin: 0.5em auto;
+            }
+        }
+    }
+}
